@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3Coar | Design Your Card</title>
+  <link rel="stylesheet" href="css/work.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Fonts EN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Jersey+10&family=Lexend+Deca:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="workspace">
+    <div id="cards" class="cards">
+      <!-- Front of the card -->
+      <div class="cardFront" id="businessFront">
+        <div class="top">
+          <img id="logoFront" class="logo" /> <!-- Company Logo -->
+          <h1 id="frontCompanyName">Company Name</h1>
+          <p id="frontCompanyTagline">Tagline</p>
+        </div>
+        
+      </div>
+      <!-- Back of the card -->
+      <div class="cardBack" id="businessBack">
+        <img id="logoBack" class="logo" /> <!-- Company Logo -->
+        <div class="leftLine">
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <h1 id="backCompanyName">Company Name</h1>
+        <p id="backCompanyTagline">Company Tagline</p>
+        <div id="phoneNum">+xxx-xxx-xxx</div> <!-- Company Phone Number -->
+        <div id="email">youremail@gmail.com</div> <!-- Company Email -->
+        <div id="companyPlace">Company Place</div> <!-- Company Place -->
+      </div>
+    </div>
+    <!-- Input fields -->
+    <div class="containerInpCreate">
+      <div class="titleInp">Insert Your Informations</div>
+      <form action="#">
+        <div class="informations">
+          <div class="inputs-box">
+            <label for="nameInput">Company Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your company name">
+            
+            <label for="companyInput">Company Tagline:</label>
+            <input type="text" id="companyInput" placeholder="What does your company do?">
+
+            <label for="logoInput">Logo:</label>
+            <input type="file" id="logoInput" accept="image/*">
+
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" value="#210440">
+
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor" value="#ffffff">
+
+            <label for="phoneInput">Company Phone Number:</label>
+            <input type="number" id="phoneInput" placeholder="Enter company phone number" inputmode="numeric" pattern="[+0-9]*">
+
+            <label for="emailInput">Company Email:</label>
+            <input type="email" id="emailInput" placeholder="Enter company email">
+
+            <label for="placeInput">Company Place:</label>
+            <input type="text" id="placeInput" placeholder="Enter company place">
+            <div class="buttonsCards">
+              <button class="genBtn" onclick="generateCard()">Generate Card</button>
+            </div>
+            <div class="buttonsCards" id="dwnBtns">
+              <button class="dwnBtn" onclick="downloadBack()">Download Back Side</button>
+              <button class="dwnBtn" onclick="downloadFront()">Download Front Side</button>
+            </div>
+
+          </div>
+        </div>
+        
+      </form>
+    </div>
+    
+  </section>
+  <script src="html2canvas.min.js"></script>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>

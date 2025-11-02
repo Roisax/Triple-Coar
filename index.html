@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Coar Home Page</title>
+    <!-- Main Page CSS -->
+    <link rel="stylesheet" href="css/3Coar.css" />
+    <!-- Render All Elements Normally CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- ICONS (Font Awesome Library) -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Fonts - EN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=IBM+Plex+Sans+Arabic&family=Jersey+10&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Header -->
+    <header>
+        <a href="#" class="Logo"><img src="images/3Coar-Logo-New.png" alt="3Coar Logo" id="logo"></a>
+        <ul class="navbar" id="navbar">
+            <li><a href="#home-pg">Home</a></li>
+            <li><a href="#about-us-pg">About Us</a></li>
+            <li><a href="#our-work-pg">Our Work</a></li>
+            <li><a href="#contact-us-pg">Contact Us</a></li>
+            <!-- <li><a href="#">AR</a></li> -->
+        </ul>
+        <button class="btnlgn" id="form-open">Login</button>
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+        
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home-pg">
+        <div class="form-container">
+        <i class="fa-solid fa-x form-closer"></i>
+        <!-- Login Form -->
+        <div class="login-form">
+            <form action="#">
+                <h2>Login</h2>
+                <div class="inputs-box">
+                    <input type="email" placeholder="Enter your Email" required>
+                    <i class="fa-solid fa-envelope email"></i>
+                </div>
+                <div class="inputs-box">
+                    <input type="password" placeholder="Enter your Password" required>
+                    <i class="fa-solid fa-lock password"></i>
+                    <i class="fa-solid fa-eye-slash pass-hide"></i>
+                </div>
+                <div class="optn-field">
+                    <a href="#" class="forgot-pass">Forgot Password?</a>
+                </div>
+                <button class="login-now">
+                    Login Now
+                </button>
+
+                <div class="login-rgstr">
+                    Don't have an account? <a href="#" id="signup">Register</a>
+                </div>
+            </form>
+            
+        </div>
+        <div class="register-form">
+            <form action="#">
+                <h2>Register</h2>
+                <div class="inputs-box">
+                    <input type="text" placeholder="Create Username" required>
+                    <i class="fa-solid fa-user usernme"></i>
+                </div>
+                <div class="inputs-box">
+                    <input type="email" placeholder="Enter your Email" required>
+                    <i class="fa-solid fa-envelope email"></i>
+                </div>
+                <div class="inputs-box">
+                    <input type="password" placeholder="Create Password" required>
+                    <i class="fa-solid fa-lock password"></i>
+                    <i class="fa-solid fa-eye-slash pass-hide"></i>
+                </div>
+                <div class="inputs-box">
+                    <input type="password" placeholder="Confirm Password" required>
+                    <i class="fa-solid fa-lock password"></i>
+                    <i class="fa-solid fa-eye-slash pass-hide"></i>
+                </div>
+
+                <button class="login-now">
+                    Signup Now
+                </button>
+
+                <div class="login-rgstr">
+                    Already have an account? <a href="#" id="signin">Login</a>
+                </div>
+            </form>
+            
+        </div>
+        </div>
+        <div class="home-text">
+            <h1>Create Your Unique <span>Business Card</span> <br>in Minutes</h1>
+            <p>Ready for it ?</p>
+            <a href="work-space1.html" class="btn">Design Now!</a>
+
+        </div>
+    </section>
+    <!-- About Us -->
+    <section class="about-us" id="about-us-pg">
+        <div class="about-us-img">
+            <img src="images/About-us-img.png" alt="3Coar logo Company Card Creator">
+        </div>
+        <div class="about-us-text">
+            <h5>Triple Coar | Company Card Creator</h5>
+            <h2>About Us</h2>
+            <p>Welcome to Triple Coar! Craft professional business cards effortlessly and for free.
+               Whether you're a freelancer, entrepreneur, or a seasoned professional, our platform offers customizable templates and intuitive design tools to help you stand out. 
+               Let us help you make meaningful connections, at no cost to you.</p>
+        </div>
+    </section>
+    <!-- Our Work -->
+    <section class="our-work" id="our-work-pg">
+        <div class="slider">
+            <h2>Our Work</h2>
+            <div class="lst">
+                 <img id="slide1" src="images/1.png" alt="">
+                 <img id="slide2" src="images/2.png" alt="">
+                 <img id="slide3" src="images/3.png" alt="">  
+            </div>
+            <div class="slider-nav">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Contact Us -->
+    <section class="contact-us" id="contact-us-pg">
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Interested to have your own card?</h2>
+                    <h3>Order now for <span>free !</h3>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="7b301d65-2f6f-4683-8223-588ae9b09582">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Request ✎" class="contact-inputs" required></textarea>
+                <button type="submit">Submit <p> <i class="fa-solid fa-envelope"></i></p></i></button>
+            </form>
+            <div class="contact-right">
+                <img src="images/contact-us-img.png" alt="Contact Us Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h3>Services</h3>
+            <a href="#">Email Marketing</a>
+            <a href="#">Canvas</a>
+            <a href="#">Brandings</a>
+            <a href="#">Offline</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>About</h3>
+            <a href="#">Our Story</a>
+            <a href="#">Benefits</a>
+            <a href="#">Team</a>
+            <a href="#">Designers</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Help</h3>
+            <a href="#">FAQs</a>
+            <a href="#">Admin</a>
+        </div>
+        
+        <div class="footer-box">
+            <h3>Social</h3>
+            <div class="social">
+                 <a href="https://www.instagram.com/roisax_?igsh=cWRqaWozemt2zmVq"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="https://x.com/SrTahsiin?t=n7F58FZCXMXReTr2ZGqrrw&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                 <a href="https://wa.link/admqcb"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+    </section>
+
+    <!-- CopyRight -->
+    <div class="copyright">
+        <p>Copyright &copy; 2024 By Tahsin N. Hamadi</p>
+    </div>
+
+   <!-- JavaScript FILE -->
+   <script src="scripts.js"></script>
+
+</body>
+</html>

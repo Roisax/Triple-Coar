@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+/* End Global Rules */
+/* ---ROOT-- */
+:root{
+    --text-color: #210440;
+    --bg-color: #fbe2d4;
+    --main-color: hsl(44, 100%, 50%) ;
+    --h1-font: 4rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+    --span-font: 4rem;
+}
+/* ---ROOT ENDS--- */
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+
+}
+/* Workspace */
+
+.workspace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 200vh;
+    width: 100%;
+    background-image: url(../images/workspace-background.png);
+    background-size: cover;
+  }
+
+
+  .containerInpCreate {
+    max-width: 600px;
+    width: 100%;
+    height: 56%;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.containerInpCreate .titleInp {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.containerInpCreate .titleInp::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: var(--main-color);
+}
+.containerInpCreate form .informations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containerInpCreate form .inputs-box label {
+    margin-bottom: 20px; /* Space between label and input */
+}
+form .informations .inputs-box{
+  margin: 40px 20px;
+}
+
+.containerInpCreate form .inputs-box input {
+    height: 45px;
+    width: calc(100% - 20px); 
+}
+.informations .inputs-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s ease-out;
+}
+.informations .inputs-box input:hover{
+  border-bottom: 1px solid var(--text-color);
+}
+.informations .inputs-box input:focus{
+  border-bottom: 1px solid var(--main-color);
+}
+form .buttonsCards .dwnBtn,
+form .buttonsCards .genBtn{
+  height: 45px;
+  margin: 0 5px;
+  display: inline-block;
+  padding: 0 40px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid var(--text-color);
+  border-radius: 20px;
+  transition: all .50s ease;
+  cursor: pointer;
+}
+
+form .buttonsCards .dwnBtn:hover,
+form .buttonsCards .genBtn:hover{
+  
+  border: 2px solid var(--main-color);
+  background: var(--text-color);
+  color: var(--main-color);
+  border-radius: 40px;
+}
+form .buttonsCards input{
+  height: 50%;
+  width: 50%;
+  outline: none;
+  
+}
+
+  .cards {
+    overflow: hidden;
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  .cardFront {
+    right: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #210440;
+    border: 1px solid #000;
+    overflow: hidden;
+  }
+  .cardFront h1{
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .cardBack {
+
+  
+    width: 350px;
+    border-radius: 5px;
+    height: 200px;
+    padding: 20px 25px;
+    position: relative;
+    color: var(--text-color);
+    background-color: #ffffff;
+    border: 1px solid #000;
+    overflow: hidden;
+    z-index: 1;
+  }
+  #backCompanyName{
+    position: relative;
+    bottom: 20px;
+    padding-left: 30px;
+  }
+  #backCompanyTagline{
+    position: relative;
+    padding-left: 30px;
+    bottom: 40px;
+  }
+  .logo {
+    max-width: 120px;
+    max-height: 100px;
+    display: absolute;
+  }
+  
+  .leftLine {
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0px;
+    top: 0;
+    width: 20px;
+    height: 31vh;
+    background-color: #210440; /* Adjust this to match the background color of the front card */
+}
+  .fa-phone{
+    position: relative;
+    bottom: 17px;
+  }
+  .fa-envelope{
+    position: relative;
+    bottom: 10px;
+  }
+  .fa-location-dot{
+    position: relative;
+    bottom: 5px;
+  }
+  #email{
+    position: relative;
+    top: 1px;
+  }
+  #companyPlace{
+    position: relative;
+    top: 5px;
+  }
+  
+
+/* Media Queris */
+@media (max-width: 1700px){
+
+  section{
+      padding: 50px 8% 40px;
+  }
+}
+@media (max-width: 1200px){
+
+  section{
+      padding: 45px 5% 35px;
+  }
+}
+@media (max-width: 1050px){
+
+
+}
+@media (max-width: 800px){
+
+
+}
+
+@media (max-width: 600px){
+
+}
+@media (max-width: 450px){
+  section{
+      padding: 60px 3% 50px;
+  }
+}
+/* Media Queries End */
